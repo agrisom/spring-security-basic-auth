@@ -12,7 +12,7 @@
 	<artifactId>spring-security-basic-auth</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-security-basic-auth</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project with Spring Security Basic Auth</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -26,7 +26,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -42,10 +42,14 @@
 
 		<!-- spring security -->
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<!--<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
-		</dependency>
+		</dependency>-->
 
 		<!-- mongoDB -->
 		<dependency>
