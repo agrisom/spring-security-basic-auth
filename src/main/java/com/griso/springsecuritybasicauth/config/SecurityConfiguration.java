@@ -33,7 +33,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 				.authorizeRequests()
 
 				.antMatchers(HttpMethod.GET, "/private").authenticated()
-				.antMatchers(HttpMethod.DELETE, "/admin").hasRole("ADMIN")
+				.antMatchers(HttpMethod.GET, "/admin").hasRole("ADMIN")
 
 				.and()
 				.csrf()
